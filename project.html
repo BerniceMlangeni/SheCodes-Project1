@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Final Project</title>
+
+    <style>
+        body{
+         background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+         color: black;
+         text-align: center;
+         font-weight: 500;
+        }
+      h1{
+        line-height: 40px;
+      }
+
+       .first{
+        border: 2px #fff solid;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      
+        width: 700px; 
+        height: 400px; 
+        margin: 20px auto; 
+    
+       }
+
+       .second , .third{
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        margin-bottom: 15px;
+       }
+       
+
+  .image-text-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid white; 
+    border-radius: 10px; 
+    width: 600px;
+    height:150px ;
+    padding: 20px; 
+    }
+
+  .image-text-box img {
+    width: 150px; 
+    height: auto; 
+    margin-right: 20px; 
+    border-radius: 10px; 
+    }
+
+  .image-text-box p {
+    margin: 0; 
+    font-size: 16px; 
+    color: #333; 
+    }
+
+
+     button{
+     margin-top: 20px;
+     padding:10px;
+     border-radius: 15px;
+     font-size: 22px;
+     transition: all 200ms ease-in-out;
+     background-color:  #cadefc;
+     box-shadow: #333  10px;
+       }
+
+       button:hover{
+        cursor: pointer;
+         color:  #9896f1;
+        background-color:  #d59bf6;
+        border: 1px solid black;
+       }
+
+    </style>
+</head>
+<body>
+   <h1>Bernice' Cooking Adventures!</h1>  <hr>
+
+   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/073/original/cooking_img.jpg?1726640788" width="400px">
+  
+   <div class="first">
+    <h2>Hi, i am Bernice and let's explore a little bit about one of my passions which is Cooking.</h2>
+   <h3>Firstly let's find out what <em>Cooking</em> is.</h3>
+    <span>Cooking, also known as cookery or professionally as the culinary arts, is the art, science and craft <br> of using heat to make food more palatable, digestible, nutritious, or safe. Cooking techniques  <br>and ingredients vary widely, from grilling food over an open fire, to using electric stoves, to baking  <br>in various types of ovens, reflecting local conditions. Cooking is an aspect of all human societies <br> and a cultural universal.</span>
+    <p>Learn more about cooking <a href="https://en.wikipedia.org/wiki/Cooking" target="_blank">here</a></p>
+    <p>  <strong>Cooking is a form of art, a way of expressing oneself. A form of love,  <br>some would even say a love language. it is up to the artist what they want to craft, how they feel. Let me show you how i am feeling.</strong></p>
+  </div>
+
+  <div class="second">
+    <div class="image-text-box">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/088/original/creamy_samp.jpg?1726657311" width="200px">
+        <p> <strong>creamy samp and Beef Stew:</strong> <br>   A Step-by-Step Guide
+            Step 1: Gather the Ingredients <br>
+            
+             To make creamy samp and beef stew, you will need the following ingredients:
+            
+            – 2 tablespoons of olive oil <br>
+            
+            – 2 onions, diced  <br> <a href="https://cooking365.co.za/how-to-make-creamy-samp-beef-stew-a-step-by-step-guide/" target="_blank">Go to recipe</a></p>
+    </div>
+</div> 
+
+
+<div class="third">
+    <div class="image-text-box">
+        <img src="
+        https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/097/original/mogodu.png?1726660734" width="200px">
+        <p> <strong>Mogodu/Tripe:</strong> <br>   there's no denying that tripe is one of South Africa's most treasured foods. 
+            Gather the following Ingredients <br>
+            - 1 kg tripe <br>
+             - Coarse salt, for sprinkling and soaking <br>
+         - 4 litres water  <br><a href="https://taste.co.za/recipes/tripe-mala-mogodu-ulusu/" target="_blank">Go to recipe</a></p>
+    </div>
+</div>
+
+
+<div class="second">
+    <div class="image-text-box">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/098/original/milk_tart.jpg?1726661492" width="200px">
+        <p> <strong>Milk Tart:</strong> <br>  Easy, Rich and Creamy – Perfect pie with an easy press-on pastry crust.   <br>
+            
+             Ingredients:
+            
+             Sucre Patee (Pastry Crust) <br>
+             ▢1 1/2 cups (188 grams) all-purpose flour <br>
+             ▢1/3 cup (35grams ) confectioner’s sugar powdered sugar <br> <a href="https://www.africanbites.com/milk-tart/" target="_blank">Go to recipe</a></p>
+    </div>
+</div>
+
+<h3> South Africa has a very diverse food culture, exploring it gives me lots of joy  <br>and i hope it does for other people. To know more abouit cooking and south african  <br>recipes sign up below!</h3>
+
+
+   <button>Sign me up!</button>
+
+   <script>
+
+    function signup() {
+        let username = prompt("What is your name?");
+        let country = prompt("Where are you from?");
+
+        if(country === "South Africa"){
+            alert("Hello👋, " + name+ "endulge with me on this wonderful food culture of Mzansi. Happy Cooking🙌!" );
+        } else{
+            alert("Hello👋, " + name + "Even when you are not from South Africa, you can still learn about our diverse food culture. Happy cooking!🙌");
+        }
+    } 
+    
+    let theButton = document.querySelector("button");
+        theButton.addEventListener("click", signup);
+   </script>
+</body>
+</html>
+
